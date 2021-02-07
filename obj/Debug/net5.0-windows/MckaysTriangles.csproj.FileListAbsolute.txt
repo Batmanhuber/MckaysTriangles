@@ -1,0 +1,16 @@
+D:\Github_Repositories\MckaysTriangles\bin\Debug\net5.0-windows\MckaysTriangles.exe
+D:\Github_Repositories\MckaysTriangles\bin\Debug\net5.0-windows\MckaysTriangles.deps.json
+D:\Github_Repositories\MckaysTriangles\bin\Debug\net5.0-windows\MckaysTriangles.runtimeconfig.json
+D:\Github_Repositories\MckaysTriangles\bin\Debug\net5.0-windows\MckaysTriangles.runtimeconfig.dev.json
+D:\Github_Repositories\MckaysTriangles\bin\Debug\net5.0-windows\MckaysTriangles.dll
+D:\Github_Repositories\MckaysTriangles\bin\Debug\net5.0-windows\ref\MckaysTriangles.dll
+D:\Github_Repositories\MckaysTriangles\bin\Debug\net5.0-windows\MckaysTriangles.pdb
+D:\Github_Repositories\MckaysTriangles\obj\Debug\net5.0-windows\MckaysTriangles.csprojAssemblyReference.cache
+D:\Github_Repositories\MckaysTriangles\obj\Debug\net5.0-windows\MckaysTriangles.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github_Repositories\MckaysTriangles\obj\Debug\net5.0-windows\MckaysTriangles.AssemblyInfoInputs.cache
+D:\Github_Repositories\MckaysTriangles\obj\Debug\net5.0-windows\MckaysTriangles.AssemblyInfo.cs
+D:\Github_Repositories\MckaysTriangles\obj\Debug\net5.0-windows\MckaysTriangles.csproj.CoreCompileInputs.cache
+D:\Github_Repositories\MckaysTriangles\obj\Debug\net5.0-windows\MckaysTriangles.dll
+D:\Github_Repositories\MckaysTriangles\obj\Debug\net5.0-windows\ref\MckaysTriangles.dll
+D:\Github_Repositories\MckaysTriangles\obj\Debug\net5.0-windows\MckaysTriangles.pdb
+D:\Github_Repositories\MckaysTriangles\obj\Debug\net5.0-windows\MckaysTriangles.genruntimeconfig.cache
