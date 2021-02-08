@@ -1,0 +1,5 @@
+D:\Github_Repositories\MckaysTriangles\bin\Debug\net5.0-windows\publish\MckaysTriangles.exe
+D:\Github_Repositories\MckaysTriangles\bin\Debug\net5.0-windows\publish\MckaysTriangles.dll
+D:\Github_Repositories\MckaysTriangles\bin\Debug\net5.0-windows\publish\MckaysTriangles.deps.json
+D:\Github_Repositories\MckaysTriangles\bin\Debug\net5.0-windows\publish\MckaysTriangles.runtimeconfig.json
+D:\Github_Repositories\MckaysTriangles\bin\Debug\net5.0-windows\publish\MckaysTriangles.pdb

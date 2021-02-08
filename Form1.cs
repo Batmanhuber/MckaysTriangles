@@ -80,13 +80,14 @@ namespace MckaysTriangles
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(500, 400);
+            this.ClientSize = new System.Drawing.Size(600, 500);
             this.Controls.Add(this.splitContainer);
             this.Text = "Triangle Information";
             this.ResumeLayout(false);
             this.PerformLayout();
         }
 
+        //
         //
         // Event handlers for submission of side lengths 1 2 and 3
         //
@@ -118,7 +119,7 @@ namespace MckaysTriangles
             
         }
 
-        // TODO:
+        // 
         // make sure input is a valid triangle
         private bool valid_input(){
             bool valid = false;
@@ -138,21 +139,67 @@ namespace MckaysTriangles
         // TODO:
         // check type of tirangle return info
         private String check_Triagle(){
-            return "Valid Triangle!";
+            String triInfo = "Valid Triangle!";
+            String eqiuilateralInfo = "\nEQUILATERAL: \nAn equilateral triangle is a triangle in which all three sides have the same length. In the familiar Euclidean geometry, an equilateral triangle is also equiangular; that is, all three internal angles are also congruent to each other and are each 60°. \nAn Equilateral Triangle is also ISOSCELES.";
+            String isosceleseInfo = "\nISOSCELES: \nAn isosceles triangle is a triangle that has two sides of equal length. The two equal sides are called the legs and the third side is called the base of the triangle. Every isosceles triangle has an axis of symmetry along the perpendicular bisector of its base. The two angles opposite the legs are equal and are always acute, so the classification of the triangle as acute, right, or obtuse depends only on the angle between its two legs.";
+            String scaleneInfo = "\nSCALENE: \nAll angles of a scalene triangle are unequal. A scalene triangle has no line of symmetry. The angle opposite to the longest side would be the greatest angle and vice versa. All sides of the given scalene triangle are unequal.";
+            String rightInfo = "\nRIGHT TRIANGLE: \nA right triangle (American English) or right-angled triangle (British English) is a triangle in which one angle is a right angle (that is, a 90-degree angle). The relation between the sides and angles of a right triangle is the basis for trigonometry. The side opposite the right angle is called the hypotenuse (side c in the figure). The sides adjacent to the right angle are called legs (or catheti, singular: cathetus). Side a may be identified as the side adjacent to angle B and opposed to (or opposite) angle A, while side b is the side adjacent to angle A and opposed to angle B. If the lengths of all three sides of a right triangle are integers, the triangle is said to be a Pythagorean triangle and its side lengths are collectively known as a Pythagorean triple.";
+            decimal num1 = this.number1.Value;
+            decimal num2 = this.number2.Value;
+            decimal num3 = this.number3.Value;
+            if(this.isosceles(num1 , num2, num3)){
+                if(this.eqiuilateral(num1 , num2, num3))
+                    triInfo += eqiuilateralInfo;
+                else
+                    triInfo += isosceleseInfo;
+            }else
+                triInfo += scaleneInfo;
+            
+            if(this.rightTri(num1, num2, num3)){
+                triInfo += rightInfo;
+            }
+            
+            return triInfo;
         }
 
         //
-        // find max side
-        private decimal my_Max(decimal num1, decimal num2, decimal num3){
-            decimal max = num1;
-
-            if(max < num2){
-                max = num2;
+        // determin isosceles
+        private bool isosceles(decimal num1, decimal num2, decimal num3){
+            if(num1 == num2 || num1 == num3 || num2 == num3){
+                return true;
+            }else
+                return false;
+        }
+        //
+        // determin equilateral
+        private bool eqiuilateral(decimal num1, decimal num2, decimal num3){
+            if(num1 == num2 && num1 == num3){
+                return true;
+            }else
+                return false;
+        }
+        private bool rightTri(decimal num1, decimal num2, decimal num3){
+            bool isRight = false;
+            int max = 1;
+            if(max < num2)
+                max = 2;
+            if(max < num3)
+                max = 3;
+            switch(max){
+                case 1:
+                    if((num2*num2)+(num3*num3) == (num1*num1))
+                        isRight = true;
+                break;
+                case 2:
+                    if((num1*num1)+(num3*num3) == (num2*num2))
+                        isRight = true;
+                break;
+                case 3:
+                    if((num2*num2)+(num1*num1) == (num3*num3))
+                        isRight = true;
+                break;
             }
-            if(max < num3){
-                max = num3;
-            }
-            return max;
+            return isRight;
         }
     }
 }
