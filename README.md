@@ -7,8 +7,9 @@ Download repository and it can either be run with the "dotnet run" command for d
 Or a copy of the .exe file can be found in path MckaysTriangles>bin>MckaysTriangles.exe
 
 Notes:
-This assumes user input should only be positive integer values. Because of this Only right triangles that are pythagerian triples will occure.
-This also makes it impossible to enter an Isosceles right triangle.
+    - This project was all completed in VS code. No GUI was used to create my winforms windows, they were all coded.
+    - This assumes user input should only be positive integer values. Because of this Only right triangles that are pythagerian triples will occure.
+    - This also makes it impossible to enter an Isosceles right triangle.
 
 Description:
     Purpose: Provides information about a triangle given the lengths of three sides
