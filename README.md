@@ -3,8 +3,8 @@ Solution for the Triangle Challenge
 By: Mckay Huber
 
 Instructions:
-Can either be run with the "dotnet run" command for dotnet users
-Or a copy of the .exe file can be found in main repository "MckaysTriangles"
+Download repository and it can either be run with the "dotnet run" command for dotnet users
+Or a copy of the .exe file can be found in path MckaysTriangles>bin>MckaysTriangles.exe
 
 Notes:
 This assumes user input should only be positive integer values. Because of this Only right triangles that are pythagerian triples will occure.
